@@ -1,0 +1,71 @@
+# Casos de Teste - Subarranjo de Soma Máxima (Etapa 1)
+# Formato: 
+# [Tamanho do Vetor]
+# [Elementos do Vetor separados por espaço]
+
+# Caso 1: Vetor com valores mistos (Padrão)
+5
+2 -1 4 -5 3
+# Saida Esperada:
+# Soma maxima: 5, Inicio: 0, Fim: 2
+
+# Caso 2: Vetor contendo apenas valores negativos (Exigência do professor)
+4
+-3 -8 -2 -5
+# Saida Esperada:
+# Soma maxima: -2, Inicio: 2, Fim: 2
+
+# Caso 3: Vetor de tamanho 1 (Exigência do professor)
+1
+10
+# Saida Esperada:
+# Soma maxima: 10, Inicio: 0, Fim: 0
+
+# Caso 4: Empates entre intervalos com a mesma soma (Exigência do professor)
+6
+3 3 -10 6 0 -2
+# Saida Esperada:
+# Soma maxima: 6, Inicio: 0, Fim: 1 (ou Inicio: 3, Fim: 3)
+
+---
+
+# Casos de Teste - Par de Pontos Mais Próximos (Etapa 2)
+# Formato: 
+# [Numero de Pontos]
+# [x1] [y1]
+# [x2] [y2]
+# ...
+
+# Caso 1: Pontos normais espalhados
+5
+0 0
+3 4
+5 1
+12 10
+10 12
+# Saida Esperada:
+# Menor distancia: 2.8284 (entre 12,10 e 10,12)
+
+# Caso 2: Pontos alinhados verticalmente (mesmo eixo x)
+4
+2 1
+2 5
+2 8
+2 3
+# Saida Esperada:
+# Menor distancia: 2.0000 (entre 2,1 e 2,3 ou 2,3 e 2,5)
+
+# Caso 3: Pontos coincidentes (distância zero)
+3
+1 1
+5 5
+1 1
+# Saida Esperada:
+# Menor distancia: 0.0000 (entre 1,1 e 1,1)
+
+# Caso 4: Conjunto pequeno de pontos (apenas 2)
+2
+10 10
+20 20
+# Saida Esperada:
+# Menor distancia: 14.1421 (entre 10,10 e 20,20)
